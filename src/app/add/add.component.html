@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="view-account">
+                <section class="module">
+                    <div class="module-inner">
+                        <div class="side-bar">
+                            
+                           
+                        </div>
+                        <div class="content-panel">
+                            <form class="form-horizontal" (ngSubmit)="onSubmit()" #form="ngForm">
+                                <fieldset class="fieldset">
+                                  <h3 class="fieldset-title">Personal Info</h3>
+                              
+                                  <div class="form-group">
+                                    <label class="col-md-2 col-sm-3 col-xs-12 control-label">First Name</label>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                      <input type="text" class="form-control" placeholder="Enter First name" [(ngModel)]="firstName" name="firstName" required>
+                                    </div>
+                                  </div>
+                                  <br>
+                              
+                                  <div class="form-group">
+                                    <label class="col-md-2 col-sm-3 col-xs-12 control-label">Last Name</label>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                      <input type="text" class="form-control" placeholder="Enter Last name" [(ngModel)]="lastName" name="lastName" required>
+                                    </div>
+                                  </div>
+                                  <br>
+                              
+                                  <div class="form-group">
+                                    <label class="col-md-2 col-sm-3 col-xs-12 control-label">Occupation</label>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                      <input type="text" class="form-control" placeholder="Enter Occupation" [(ngModel)]="occupation" name="occupation" required>
+                                    </div>
+                                  </div>
+                                  <br>
+                              
+                                  <div class="form-group">
+                                    <label class="col-md-2 col-sm-3 col-xs-12 control-label">City</label>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                      <input type="text" class="form-control" placeholder="Enter City" [(ngModel)]="city" name="city" required>
+                                    </div>
+                                  </div>
+                                  <br>
+                              
+                                  <div class="form-group">
+                                    <label class="col-md-2 col-sm-3 col-xs-12 control-label">Description</label>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                      <input type="text" class="form-control" placeholder="Enter Description" [(ngModel)]="description" name="description" required>
+                                    </div>
+                                  </div>
+                                  <br>
+                              
+                                  <div class="form-group">
+                                    <label class="col-md-2 col-sm-3 col-xs-12 control-label">Latitude</label>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                        <input type="number" class="form-control" placeholder="Enter Latitude" [(ngModel)]="latitude" name="latitude" step="any" required>
+                                    </div>
+                                </div>
+                                
+                                  <br>
+                              
+                                  <div class="form-group">
+                                    <label class="col-md-2 col-sm-3 col-xs-12 control-label">Longitude</label>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                        <input type="number" class="form-control" placeholder="Enter Longitude" [(ngModel)]="longitude" name="longitude" step="any" required>
+                                    </div>
+                                </div>
+                                
+                                </fieldset>
+                                <br>
+                              
+                                <fieldset class="fieldset">
+                                  <h3 class="fieldset-title">Contact Info</h3>
+                                  <div class="form-group">
+                                    <label class="col-md-2 col-sm-3 col-xs-12 control-label">Email</label>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                      <input type="email" class="form-control" placeholder="Enter Email" [(ngModel)]="email" name="email" required>
+                                    </div>
+                                  </div>
+                                  <br>
+                              
+                                  <div class="form-group">
+                                    <label class="col-md-2 col-sm-3 col-xs-12 control-label">Phone</label>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                      <input type="number" class="form-control" placeholder="Enter Phone Number" [(ngModel)]="phone" name="phone" required>
+                                    </div>
+                                  </div>
+                                </fieldset>
+                                <hr>
+                              
+                                <div class="form-group">
+                                  <div class="col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0">
+                                    <input class="btn btn-primary" type="submit" value="Add Profile" [disabled]="!form.form.valid">
+
+                                  </div>
+                                </div>
+
+                                <!-- Add this code within your existing HTML structure -->
+                                  <div class="alert alert-success" *ngIf="showAlert">
+                                    Profile added successfully
+                                  </div>
+
+                              </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

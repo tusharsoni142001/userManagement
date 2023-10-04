@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container bootstrap snippets bootdey">
+            <div class="row">
+              <div class="profile-nav col-md-3">
+                  <div class="panel">
+                      <div class="user-heading round">
+                          <a href="#">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="">
+                          </a>
+                          <h1>{{foundUser.firstName}} {{foundUser.lastName}}</h1>
+                          <p> {{foundUser.email}}</p>
+                      </div>
+            
+                     
+                  </div>
+              </div>
+              <div class="profile-info col-md-9">
+                
+                  <div class="panel">
+                      <div class="bio-graph-heading">
+                        {{foundUser.description}}
+                      </div>
+                      <div class="panel-body bio-graph-info">
+                          <h1>User Info</h1>
+                          <div class="row">
+                              <div class="bio-row">
+                                  <p><span>First Name </span>: {{foundUser.firstName}}</p>
+                              </div>
+                              <div class="bio-row">
+                                  <p><span>Last Name </span>: {{foundUser.lastName}}</p>
+                              </div>
+                              <div class="bio-row">
+                                  <p><span>City </span>: {{foundUser.address}}</p>
+                              </div>
+                             
+                              <div class="bio-row">
+                                  <p><span>Occupation </span>: {{foundUser.jobPost}}</p>
+                              </div>
+                              <div class="bio-row">
+                                  <p><span>Email </span>: {{foundUser.email}}</p>
+                              </div>
+                              
+                              <div class="bio-row">
+                                  <p><span>Phone </span>: {{foundUser.phone}}</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>
+            </div>
+            </div>
+    </body>
+</html>
