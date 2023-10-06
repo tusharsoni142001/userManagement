@@ -9,6 +9,11 @@ import { EditComponent } from './edit/edit.component';
 
 const routes: Routes = [
   {
+    path: '', // Empty path for the default route
+    redirectTo: 'home',
+    pathMatch: 'full' // Ensure a full match of the path
+  },
+  {
     path: 'home',
     component: ProfileListComponentComponent
   },
